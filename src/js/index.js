@@ -1,3 +1,7 @@
 $(document).ready(function () {
-  // Create some JavaScript here
+  $('.grid').hover(function() {
+    $('.one').toggleClass('newclass');
+    $('.two').toggleClass('newbox');
+
+  })
 });
