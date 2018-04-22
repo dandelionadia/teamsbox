@@ -1,48 +1,46 @@
 .team_section {
     background-color: #F7F7F7;
+    
+    .card {
+        background-color: white;
+
+        &:hover .card__mask {
+            opacity: 1;
+        }
+    }
+    
+    .card__content {
+        margin: 0;
+        position: relative;
+    }
+    
+    .card__mask {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(52, 74, 94, .5);
+        position: absolute;
+        transition: opacity 1s ease;
+    }
+
+    .box {
+        // height: 100%;
+        // width: 50px;
+        // background-color: rgb(137, 172, 177);
+        // z-index: 2;
+        // position: absolute;
+        // right: 0;
+        // // display: none;
+        // border-radius: 2px;
+    }
 
     img {
         width: 100%;
         display: block;
     }
 
-    .box {
-        margin: 0;
-        position: relative;
-    }
-
-    .lover-content {
+    .card__info {
         padding: 15px 20px 10px;
-    }
-
-    .grid {
-        background-color: white;
-    }
-
-    .newclass::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: 0.3;
-        position: absolute;
-        z-index: 1;
-    }
-
-    .two {
-        animation: muv 1s ease 3 normal;
-    }
-
-    @keyframes muv {
-        100% { right: 30px;}
-    } 
-
-    .newbox {
-        height: 100%;
-        width: 50px;
-        background-color: rgb(137, 172, 177);
-        z-index: 2;
-        position: absolute;
-        right: -30px;
     }
 }
