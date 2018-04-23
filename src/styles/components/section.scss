@@ -1,46 +1,64 @@
-.team_section {
+.team-section {
     background-color: #F7F7F7;
     
     .card {
         background-color: white;
+        overflow: hidden;
 
         &:hover .card__mask {
             opacity: 1;
         }
-    }
-    
-    .card__content {
-        margin: 0;
-        position: relative;
-    }
-    
-    .card__mask {
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        background-color: rgba(52, 74, 94, .5);
-        position: absolute;
-        transition: opacity 1s ease;
+
+        &__content {
+            margin: 0;
+            position: relative;
+        }
+
+        &__mask {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(52, 74, 94, .5);
+            position: absolute;
+            transition: opacity 1s ease;
+        }
+
+        &__info {
+            padding: 15px 20px 10px;
+        }
+
+        &:hover .box {
+            right: 0px;
+        }
     }
 
     .box {
-        // height: 100%;
-        // width: 50px;
-        // background-color: rgb(137, 172, 177);
-        // z-index: 2;
-        // position: absolute;
-        // right: 0;
-        // // display: none;
-        // border-radius: 2px;
-    }
+        height: 100%;
+        width: 50px;
+        position: absolute;
+        background-color: rgb(137, 172, 177);
+        z-index: 2;
+        right: -50px;
+        transition: right 1s;
 
+        &__container {
+            display: flex;
+            flex-direction: column;
+
+            &-ciriel {
+                background-color: rgb(255, 255, 255);
+                border-radius: 15px;
+                width: 20px;
+                height: 20px;
+                margin: auto;
+                margin-top: 20px;
+            }
+        }
+    }
+    
     img {
         width: 100%;
         display: block;
-    }
-
-    .card__info {
-        padding: 15px 20px 10px;
     }
 }
