@@ -2,7 +2,36 @@
     background-color: $color-gray;
     padding-top: 50px;
     padding-bottom: 50px;
-}  
+} 
+
+.sec-title {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    &__color {
+        color: $color-midial-blue;
+        font-weight: 300;
+    }
+    
+    h2 {
+        border-bottom: 1.5px solid #E3E3E3;
+        padding: 0 30px;
+        padding-bottom: 10px;
+        display: inline-block;
+        &::after  {
+            position: absolute;
+            content: '';
+            width: 60px;
+            bottom: 39px;
+            border-bottom: 4px solid $color-midial-blue;
+            left: 50%;
+            transform: translateX(-50%); 
+        }
+    }
+}
+
 .card {
     background-color: $color-white;
     overflow: hidden;
