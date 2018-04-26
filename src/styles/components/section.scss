@@ -35,6 +35,7 @@
 .card {
     background-color: $color-white;
     overflow: hidden;
+    margin-bottom: 30px;
 
     &:hover .card__mask {
         opacity: 1;
