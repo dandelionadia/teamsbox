@@ -1,11 +1,16 @@
-/* Colors */
-$color-primary: #EC421F;
-$color-black: #020200;
-$color-gray-light: #F5F5F5;
-$color-gray: #A7A7A7;
+// Colors
+$color-white: white;
+$color-gray: #F7F7F7;
+$color-black: black;
+$color-blue: rgba(52, 74, 94, .5);
+$color-light-blue: rgb(137, 172, 177);
+$color-midial-blue: #1bbce8;
 
 
-/* Fonts */
-$font-family: -apple-system, BlinkMacSystemFont;
+// Font
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 $font-family-serif: Georgia;
 $font-size-base: 16px;
+
+// 
+$text-transform: capitalize;
